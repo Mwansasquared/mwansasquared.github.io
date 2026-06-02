@@ -118,7 +118,7 @@
 		style="background-image: radial-gradient(circle, rgba(99,102,241,0.15) 1px, transparent 1px); background-size: 28px 28px; opacity: 0.35;"
 	></div>
 
-	<!-- ===== HERO ===== -->
+	<!-- ====== HERO ====== -->
 	<section class="relative z-10 flex min-h-screen flex-col justify-center px-8 pb-20 pt-24 md:px-16">
 		<div
 			class="relative z-10 max-w-4xl"
