@@ -1,14 +1,22 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/kit/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-const base = process.env.BASE_PATH || '';
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	preprocess: vitePreprocess(),
 
-export default {
 	kit: {
 		adapter: adapter({
-			fallback: 'index.html'
+			pages: 'build',
+			assets: 'build',
+			fallback: '404.html',
+			precompress: false,
+			strict: true
 		}),
 		paths: {
-			base
+			base: process.argv.includes('dev') ? '' : '/mwansa-portfolio'
 		}
 	}
 };
+
+export default config
