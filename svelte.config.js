@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/kit/adapter-static';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -14,7 +14,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : '/mwansa-portfolio'
+			base: process.env.BASE_PATH ?? ''
 		}
 	}
 };
