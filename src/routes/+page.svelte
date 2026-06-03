@@ -310,7 +310,7 @@
 					>
 						Open to Full-Stack or Go engineering roles globally — backend, frontend, or anywhere in between.
 					</p>
-					<p class="mt-4 text-sm font-light text-neutral-500">Remote · Hybrid · On-site</p>
+					<p class="mt-4 text-sm font-light text-neutral-500">Remote · Hybrid</p>
 				</div>
 
 				<!-- Right: links -->
